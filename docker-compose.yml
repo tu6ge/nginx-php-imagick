@@ -1,0 +1,10 @@
+version: "2"
+services:
+        #image: tu6ge/nginx-php-imagick
+        build: ./step/
+        ports:
+                - "80:80"
+                - "443:443"
+        volumes:
+                - ./www:/var/www/html
+
